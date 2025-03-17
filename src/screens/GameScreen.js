@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import {View, Text, Image, Animated, Dimensions, TouchableOpacity, Vibration} from 'react-native';
+import {View, Text, Image, Animated, Dimensions, TouchableOpacity, Vibration, ImageBackground} from 'react-native';
 import StopSvg from '../assets/svg/StopSvg';
 import {completeLevel} from '../redux/slices/levelSlice';
 import {useDispatch, useSelector} from 'react-redux'
@@ -131,8 +131,14 @@ const GameScreen = ({ navigation, route }) => {
   }, []);
 
   return (
-    <View style={{flex: 1, backgroundColor: '#000'}}>
-      {images.map((item, index) => (
+<ImageBackground
+  source={isPaused
+    ? require('../assets/img/6538959_14620.png')
+    : require('../assets/img/6538959_1460.png')} // Обычный фон
+  style={{ flex: 1, backgroundColor: '#000' }}
+  resizeMode="cover"
+>
+    {images.map((item, index) => (
         <FallingImage
           key={item.id}
           source={item.source}
@@ -577,7 +583,7 @@ const GameScreen = ({ navigation, route }) => {
           }}
         />
       </View>
-    </View>
+    </ImageBackground>
   );
 };
 

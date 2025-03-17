@@ -1,10 +1,13 @@
-import {View, Text, Button, TouchableOpacity, Image} from 'react-native';
+import {View, Text, Button, TouchableOpacity, Image, ImageBackground} from 'react-native';
 import RedSvg from '../assets/svg/redSvg';
 
 const Onboarding3Screen = ({ navigation }) => {
   return (
-    <View style={{backgroundColor: '#000', flex: 1, justifyContent: 'flex-end', paddingHorizontal: 16}}>
-      <View style={{ alignItems: 'center', position: 'absolute',top: 50, left: 50, transform: [{ rotate: '-35deg' }]}}>
+    <ImageBackground
+      source={require('../assets/img/6538958_145991.png')} // Укажите путь к изображению
+      style={{ flex: 1, justifyContent: 'flex-end', paddingHorizontal: 16 }}
+      resizeMode="cover" // Опционально: 'cover', 'contain', 'stretch', 'repeat', 'center'
+    >       <View style={{ alignItems: 'center', position: 'absolute',top: 50, left: 50, transform: [{ rotate: '-35deg' }]}}>
         <Image
           resizeMode="contain"
           source={require('../assets/img/Crown1.png')}
@@ -42,7 +45,7 @@ const Onboarding3Screen = ({ navigation }) => {
         </TouchableOpacity>
       </View>
 
-    </View>
+    </ImageBackground>
   )
 }
 

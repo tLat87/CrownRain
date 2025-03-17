@@ -1,9 +1,12 @@
-import {View, Text, Button, TouchableOpacity, Image} from 'react-native';
+import {View, Text, Button, TouchableOpacity, Image, ImageBackground} from 'react-native';
 
 const Onboarding1Screen = ({ navigation }) => {
   return (
-    <View style={{backgroundColor: '#000', flex: 1, justifyContent: 'flex-end', paddingHorizontal: 16}}>
-      <Image resizeMode={'contain'} source={require('../assets/img/Crown1.png')} style={{width:100, position:'absolute', top: 50, left: 20, transform: [{ rotate: '-35deg' }]}} />
+    <ImageBackground
+      source={require('../assets/img/6538958_145991.png')} // Укажите путь к изображению
+      style={{ flex: 1, justifyContent: 'flex-end', paddingHorizontal: 16 }}
+      resizeMode="cover" // Опционально: 'cover', 'contain', 'stretch', 'repeat', 'center'
+    >      <Image resizeMode={'contain'} source={require('../assets/img/Crown1.png')} style={{width:100, position:'absolute', top: 50, left: 20, transform: [{ rotate: '-35deg' }]}} />
       <Image resizeMode={'contain'} source={require('../assets/img/Crown1.png')} style={{width:70, position:'absolute', top: '20%', left: '45%', transform: [{ rotate: '35deg' }]}}/>
       <Image resizeMode={'contain'} source={require('../assets/img/Crown1.png')} style={{width:80, position:'absolute', top: '30%', left: 20, transform: [{ rotate: '-35deg' }]}}/>
       <Image resizeMode={'contain'} source={require('../assets/img/Crown2.png')} style={{width:75,  position:'absolute', top: 50, right: 80}}/>
@@ -23,7 +26,7 @@ const Onboarding1Screen = ({ navigation }) => {
         </TouchableOpacity>
       </View>
 
-    </View>
+    </ImageBackground>
   )
 }
 
