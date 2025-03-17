@@ -17,7 +17,7 @@ const RulerScreen = ({ navigation }) => {
       }
       style={styles.container}
     >
-      <TouchableOpacity onPress={()=>{navigation.goBack()}} style={{backgroundColor: '#d7c08a', borderWidth: 6, borderColor: '#e5d273', padding: 10, borderRadius: 15, alignItems: 'center', position: 'absolute', zIndex: 1, left: 24, top: 80}}>
+      <TouchableOpacity onPress={()=>{navigation.goBack()}} style={{backgroundColor: '#FFB300', borderWidth: 6, borderColor: '#e5d273', padding: 10, borderRadius: 15, alignItems: 'center', position: 'absolute', zIndex: 1, left: 24, top: 80}}>
         <BackSvg/>
       </TouchableOpacity>
       {/*<Image resizeMode={'contain'} source={require('../assets/img/Crown1.png')} style={{width:100, position:'absolute', top: 50, left: 20, transform: [{ rotate: '35deg' }]}} />*/}
@@ -196,7 +196,7 @@ const RulerScreen = ({ navigation }) => {
 
 
       <Text style={styles.title}>RULES</Text>
-      <View style={{backgroundColor: '#d7c08a',marginBottom: 16,marginTop: 130, borderWidth: 6, borderColor: '#e5d273', padding: 24, borderRadius: 15, alignItems: 'center', marginHorizontal: 24}}>
+      <View style={{backgroundColor: '#FFB300',marginBottom: 16,marginTop: 130, borderWidth: 6, borderColor: '#e5d273', padding: 24, borderRadius: 15, alignItems: 'center', marginHorizontal: 24}}>
         <Image
           resizeMode="contain"
           source={require('../assets/img/Crown1.png')}
@@ -246,7 +246,7 @@ const styles = {
   },
   title: {
     fontFamily: 'Nunito-Bold',
-    color: '#d7c08a',
+    color: '#FFB300',
     fontSize: 42,
   },
   levelsContainer: {
@@ -257,7 +257,7 @@ const styles = {
     width: '80%',
   },
   button: {
-    backgroundColor: '#d7c08a',
+    backgroundColor: '#FFB300',
     borderWidth: 6,
     borderColor: '#e5d273',
     paddingHorizontal: 20,

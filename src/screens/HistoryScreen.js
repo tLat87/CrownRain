@@ -34,7 +34,7 @@ const HistoryScreen = ({ navigation }) => {
       }
       style={styles.container}
     >
-        <TouchableOpacity onPress={()=>{navigation.goBack()}} style={{backgroundColor: '#d7c08a', borderWidth: 6, borderColor: '#e5d273', padding: 10, borderRadius: 15, alignItems: 'center', position: 'absolute', zIndex: 1,  bottom: 40}}>
+        <TouchableOpacity onPress={()=>{navigation.goBack()}} style={{backgroundColor: '#FFB300', borderWidth: 6, borderColor: '#e5d273', padding: 10, borderRadius: 15, alignItems: 'center', position: 'absolute', zIndex: 1,  bottom: 40}}>
           <BackSvg/>
         </TouchableOpacity>
       {selectedItemId === 1 && (
@@ -205,7 +205,7 @@ const HistoryScreen = ({ navigation }) => {
 
         {page === 1 && (
           <>
-            <View style={{width: "90%",marginTop: 20, backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', padding: 12, borderRadius: 15, alignItems: 'center'}}>
+            <View style={{width: "90%",marginTop: 20, backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', padding: 12, borderRadius: 15, alignItems: 'center'}}>
               <Image
                 resizeMode="contain"
                 source={require('../assets/img/Crown2.png')}
@@ -225,15 +225,15 @@ const HistoryScreen = ({ navigation }) => {
               </Text>
             </View>
             <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
-              {/*<TouchableOpacity onPress={()=>{}} style={{marginRight: 8,backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', justifyContent: 'center', height: 60, paddingHorizontal: 40, borderRadius: 15, alignItems: 'center', paddingBottom: 8}}>*/}
+              {/*<TouchableOpacity onPress={()=>{}} style={{marginRight: 8,backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', justifyContent: 'center', height: 60, paddingHorizontal: 40, borderRadius: 15, alignItems: 'center', paddingBottom: 8}}>*/}
               {/*  <NextBackSvg/>*/}
               {/*</TouchableOpacity>*/}
-              <TouchableOpacity onPress={()=>{handleShare('Ancient Egyptian pharaohs wore special crowns that, according to legend, had magical powers. Tutankhamun\'s crown, found in his tomb, was striking with its golden glow and precious stones. It is believed that it was created to connect the pharaoh with the gods.\n')}} style={{backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', height: 60, justifyContent: 'center', paddingHorizontal: 40, borderRadius: 15, alignItems: 'center'}}>
+              <TouchableOpacity onPress={()=>{handleShare('Ancient Egyptian pharaohs wore special crowns that, according to legend, had magical powers. Tutankhamun\'s crown, found in his tomb, was striking with its golden glow and precious stones. It is believed that it was created to connect the pharaoh with the gods.\n')}} style={{backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', height: 60, justifyContent: 'center', paddingHorizontal: 40, borderRadius: 15, alignItems: 'center'}}>
                 <Text style={{fontFamily: 'Nunito-Bold', color: '#000', fontSize: 18}}>
                   Share
                 </Text>
               </TouchableOpacity>
-              <TouchableOpacity onPress={()=>{setPage(page+1)}} style={{marginLeft: 8,backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', justifyContent: 'center', height: 60, paddingHorizontal: 40, borderRadius: 15, alignItems: 'center', paddingBottom: 8}}>
+              <TouchableOpacity onPress={()=>{setPage(page+1)}} style={{marginLeft: 8,backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', justifyContent: 'center', height: 60, paddingHorizontal: 40, borderRadius: 15, alignItems: 'center', paddingBottom: 8}}>
                 <NextBackSvg/>
               </TouchableOpacity>
             </View>
@@ -242,7 +242,7 @@ const HistoryScreen = ({ navigation }) => {
 
         {page === 2 && (
           <>
-            <View style={{width: "90%", marginTop: 20,backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', padding: 12, borderRadius: 15, alignItems: 'center'}}>
+            <View style={{width: "90%", marginTop: 20,backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', padding: 12, borderRadius: 15, alignItems: 'center'}}>
               <Image
                 resizeMode="contain"
                 source={require('../assets/img/Crown2.png')}
@@ -260,15 +260,15 @@ const HistoryScreen = ({ navigation }) => {
                 The British crown is adorned with the legendary Koh-i-Noor diamond. It is said that this stone brings misfortune to the men who wear it, which is why the crown is always passed only to queens.              </Text>
             </View>
             <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
-              <TouchableOpacity onPress={()=>{setPage(page-1)}} style={{marginRight: 8,backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', justifyContent: 'center', height: 60, paddingHorizontal: 40, borderRadius: 15, alignItems: 'center', paddingBottom: 8}}>
+              <TouchableOpacity onPress={()=>{setPage(page-1)}} style={{marginRight: 8,backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', justifyContent: 'center', height: 60, paddingHorizontal: 40, borderRadius: 15, alignItems: 'center', paddingBottom: 8}}>
                 <PrevSvg/>
               </TouchableOpacity>
-              <TouchableOpacity onPress={()=>{handleShare('The British crown is adorned with the legendary Koh-i-Noor diamond. It is said that this stone brings misfortune to the men who wear it, which is why the crown is always passed only to queens.')}} style={{backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', height: 60, justifyContent: 'center', paddingHorizontal: 40, borderRadius: 15, alignItems: 'center'}}>
+              <TouchableOpacity onPress={()=>{handleShare('The British crown is adorned with the legendary Koh-i-Noor diamond. It is said that this stone brings misfortune to the men who wear it, which is why the crown is always passed only to queens.')}} style={{backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', height: 60, justifyContent: 'center', paddingHorizontal: 40, borderRadius: 15, alignItems: 'center'}}>
                 <Text style={{fontFamily: 'Nunito-Bold', color: '#000', fontSize: 18}}>
                   Share
                 </Text>
               </TouchableOpacity>
-              <TouchableOpacity onPress={()=>{setPage(page+1)}} style={{marginLeft: 8,backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', justifyContent: 'center', height: 60, paddingHorizontal: 40, borderRadius: 15, alignItems: 'center', paddingBottom: 8}}>
+              <TouchableOpacity onPress={()=>{setPage(page+1)}} style={{marginLeft: 8,backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', justifyContent: 'center', height: 60, paddingHorizontal: 40, borderRadius: 15, alignItems: 'center', paddingBottom: 8}}>
                 <NextBackSvg/>
               </TouchableOpacity>
             </View>
@@ -277,7 +277,7 @@ const HistoryScreen = ({ navigation }) => {
 
         {page === 3 && (
           <>
-            <View style={{width: "90%", marginTop: 20,backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', padding: 12, borderRadius: 15, alignItems: 'center'}}>
+            <View style={{width: "90%", marginTop: 20,backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', padding: 12, borderRadius: 15, alignItems: 'center'}}>
               <Image
                 resizeMode="contain"
                 source={require('../assets/img/Crown2.png')}
@@ -295,15 +295,15 @@ const HistoryScreen = ({ navigation }) => {
                 Napoleon Bonaparte decided to crown himself to show that he was superior to the Pope. He took the crown from the Pope's hands and put it on his head, proclaiming himself Emperor of France.              </Text>
             </View>
             <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
-              <TouchableOpacity onPress={()=>{setPage(page-1)}} style={{marginRight: 8,backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', justifyContent: 'center', height: 60, paddingHorizontal: 40, borderRadius: 15, alignItems: 'center', paddingBottom: 8}}>
+              <TouchableOpacity onPress={()=>{setPage(page-1)}} style={{marginRight: 8,backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', justifyContent: 'center', height: 60, paddingHorizontal: 40, borderRadius: 15, alignItems: 'center', paddingBottom: 8}}>
                 <PrevSvg/>
               </TouchableOpacity>
-              <TouchableOpacity onPress={()=>{handleShare('Napoleon Bonaparte decided to crown himself to show that he was superior to the Pope. He took the crown from the Pope\'s hands and put it on his head, proclaiming himself Emperor of France.')}} style={{backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', height: 60, justifyContent: 'center', paddingHorizontal: 40, borderRadius: 15, alignItems: 'center'}}>
+              <TouchableOpacity onPress={()=>{handleShare('Napoleon Bonaparte decided to crown himself to show that he was superior to the Pope. He took the crown from the Pope\'s hands and put it on his head, proclaiming himself Emperor of France.')}} style={{backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', height: 60, justifyContent: 'center', paddingHorizontal: 40, borderRadius: 15, alignItems: 'center'}}>
                 <Text style={{fontFamily: 'Nunito-Bold', color: '#000', fontSize: 18}}>
                   Share
                 </Text>
               </TouchableOpacity>
-              <TouchableOpacity onPress={()=>{setPage(page+1)}} style={{marginLeft: 8,backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', justifyContent: 'center', height: 60, paddingHorizontal: 40, borderRadius: 15, alignItems: 'center', paddingBottom: 8}}>
+              <TouchableOpacity onPress={()=>{setPage(page+1)}} style={{marginLeft: 8,backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', justifyContent: 'center', height: 60, paddingHorizontal: 40, borderRadius: 15, alignItems: 'center', paddingBottom: 8}}>
                 <NextBackSvg/>
               </TouchableOpacity>
             </View>
@@ -312,7 +312,7 @@ const HistoryScreen = ({ navigation }) => {
 
         {page === 4 && (
           <>
-            <View style={{width: "90%", marginTop: 20,backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', padding: 12, borderRadius: 15, alignItems: 'center'}}>
+            <View style={{width: "90%", marginTop: 20,backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', padding: 12, borderRadius: 15, alignItems: 'center'}}>
               <Image
                 resizeMode="contain"
                 source={require('../assets/img/Crown2.png')}
@@ -330,15 +330,15 @@ const HistoryScreen = ({ navigation }) => {
                 in the world is the Hungarian Crown of St. Stephen, which weighs over 5 kg. It is difficult to wear even for a few minutes!              </Text>
             </View>
             <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
-              <TouchableOpacity onPress={()=>{setPage(page-1)}} style={{marginRight: 8,backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', justifyContent: 'center', height: 60, paddingHorizontal: 40, borderRadius: 15, alignItems: 'center', paddingBottom: 8}}>
+              <TouchableOpacity onPress={()=>{setPage(page-1)}} style={{marginRight: 8,backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', justifyContent: 'center', height: 60, paddingHorizontal: 40, borderRadius: 15, alignItems: 'center', paddingBottom: 8}}>
                 <PrevSvg/>
               </TouchableOpacity>
-              <TouchableOpacity onPress={()=>{handleShare('in the world is the Hungarian Crown of St. Stephen, which weighs over 5 kg. It is difficult to wear even for a few minutes! ')}} style={{backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', height: 60, justifyContent: 'center', paddingHorizontal: 40, borderRadius: 15, alignItems: 'center'}}>
+              <TouchableOpacity onPress={()=>{handleShare('in the world is the Hungarian Crown of St. Stephen, which weighs over 5 kg. It is difficult to wear even for a few minutes! ')}} style={{backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', height: 60, justifyContent: 'center', paddingHorizontal: 40, borderRadius: 15, alignItems: 'center'}}>
                 <Text style={{fontFamily: 'Nunito-Bold', color: '#000', fontSize: 18}}>
                   Share
                 </Text>
               </TouchableOpacity>
-              <TouchableOpacity onPress={()=>{setPage(page+1)}} style={{marginLeft: 8,backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', justifyContent: 'center', height: 60, paddingHorizontal: 40, borderRadius: 15, alignItems: 'center', paddingBottom: 8}}>
+              <TouchableOpacity onPress={()=>{setPage(page+1)}} style={{marginLeft: 8,backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', justifyContent: 'center', height: 60, paddingHorizontal: 40, borderRadius: 15, alignItems: 'center', paddingBottom: 8}}>
                 <NextBackSvg/>
               </TouchableOpacity>
             </View>
@@ -347,7 +347,7 @@ const HistoryScreen = ({ navigation }) => {
 
         {page === 5 && (
           <>
-            <View style={{width: "90%", marginTop: 20,backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', padding: 12, borderRadius: 15, alignItems: 'center'}}>
+            <View style={{width: "90%", marginTop: 20,backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', padding: 12, borderRadius: 15, alignItems: 'center'}}>
               <Image
                 resizeMode="contain"
                 source={require('../assets/img/Crown2.png')}
@@ -365,15 +365,15 @@ const HistoryScreen = ({ navigation }) => {
                 is the Crown of the British Empire, decorated with 2,868 diamonds, 17 sapphires, 11 emeralds, and 269 pearls.              </Text>
             </View>
             <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
-              <TouchableOpacity onPress={()=>{setPage(page-1)}} style={{marginRight: 8,backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', justifyContent: 'center', height: 60, paddingHorizontal: 40, borderRadius: 15, alignItems: 'center', paddingBottom: 8}}>
+              <TouchableOpacity onPress={()=>{setPage(page-1)}} style={{marginRight: 8,backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', justifyContent: 'center', height: 60, paddingHorizontal: 40, borderRadius: 15, alignItems: 'center', paddingBottom: 8}}>
                 <PrevSvg/>
               </TouchableOpacity>
-              <TouchableOpacity onPress={()=>{handleShare('is the Crown of the British Empire, decorated with 2,868 diamonds, 17 sapphires, 11 emeralds, and 269 pearls.')}} style={{backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', height: 60, justifyContent: 'center', paddingHorizontal: 40, borderRadius: 15, alignItems: 'center'}}>
+              <TouchableOpacity onPress={()=>{handleShare('is the Crown of the British Empire, decorated with 2,868 diamonds, 17 sapphires, 11 emeralds, and 269 pearls.')}} style={{backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', height: 60, justifyContent: 'center', paddingHorizontal: 40, borderRadius: 15, alignItems: 'center'}}>
                 <Text style={{fontFamily: 'Nunito-Bold', color: '#000', fontSize: 18}}>
                   Share
                 </Text>
               </TouchableOpacity>
-              <TouchableOpacity onPress={()=>{setPage(page+1)}} style={{marginLeft: 8,backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', justifyContent: 'center', height: 60, paddingHorizontal: 40, borderRadius: 15, alignItems: 'center', paddingBottom: 8}}>
+              <TouchableOpacity onPress={()=>{setPage(page+1)}} style={{marginLeft: 8,backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', justifyContent: 'center', height: 60, paddingHorizontal: 40, borderRadius: 15, alignItems: 'center', paddingBottom: 8}}>
                 <NextBackSvg/>
               </TouchableOpacity>
             </View>
@@ -382,7 +382,7 @@ const HistoryScreen = ({ navigation }) => {
 
         {page === 6 && (
           <>
-            <View style={{width: "90%", marginTop: 20,backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', padding: 12, borderRadius: 15, alignItems: 'center'}}>
+            <View style={{width: "90%", marginTop: 20,backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', padding: 12, borderRadius: 15, alignItems: 'center'}}>
               <Image
                 resizeMode="contain"
                 source={require('../assets/img/Crown2.png')}
@@ -400,10 +400,10 @@ const HistoryScreen = ({ navigation }) => {
                 Legend says that King Midas was given the gift of turning everything into gold. But when he accidentally touched his food and his family, he realized that wealth was not everything. His crown, made of pure gold, became a symbol of greed.              </Text>
             </View>
             <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
-              <TouchableOpacity onPress={()=>{setPage(page-1)}} style={{marginRight: 8,backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', justifyContent: 'center', height: 60, paddingHorizontal: 40, borderRadius: 15, alignItems: 'center', paddingBottom: 8}}>
+              <TouchableOpacity onPress={()=>{setPage(page-1)}} style={{marginRight: 8,backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', justifyContent: 'center', height: 60, paddingHorizontal: 40, borderRadius: 15, alignItems: 'center', paddingBottom: 8}}>
                 <PrevSvg/>
               </TouchableOpacity>
-              <TouchableOpacity onPress={()=>{handleShare(' Legend says that King Midas was given the gift of turning everything into gold. But when he accidentally touched his food and his family, he realized that wealth was not everything. His crown, made of pure gold, became a symbol of greed.')}} style={{backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', height: 60, justifyContent: 'center', paddingHorizontal: 40, borderRadius: 15, alignItems: 'center'}}>
+              <TouchableOpacity onPress={()=>{handleShare(' Legend says that King Midas was given the gift of turning everything into gold. But when he accidentally touched his food and his family, he realized that wealth was not everything. His crown, made of pure gold, became a symbol of greed.')}} style={{backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', height: 60, justifyContent: 'center', paddingHorizontal: 40, borderRadius: 15, alignItems: 'center'}}>
                 <Text style={{fontFamily: 'Nunito-Bold', color: '#000', fontSize: 18}}>
                   Share
                 </Text>
@@ -426,7 +426,7 @@ const styles = {
   },
   title: {
     fontFamily: 'Nunito-Bold',
-    color: '#d7c08a',
+    color: '#FFB300',
     fontSize: 42,
   },
   levelsContainer: {
@@ -437,7 +437,7 @@ const styles = {
     width: '80%',
   },
   button: {
-    backgroundColor: '#d7c08a',
+    backgroundColor: '#FFB300',
     borderWidth: 6,
     borderColor: '#e5d273',
     paddingHorizontal: 20,

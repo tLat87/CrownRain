@@ -194,42 +194,42 @@ const HomeScreen = ({ navigation }) => {
         }}
       />
       <Text style={{ fontFamily: 'Nunito-Bold',
-        color: '#d7c08a',
+        color: '#FFB300',
         fontSize: 42,
         marginBottom: 24,
       }}>CROWN RAIN</Text>
 
 
-      <TouchableOpacity onPress={()=>{navigation.navigate('Levels')}} style={{backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', padding: 24, borderRadius: 15, alignItems: 'center'}}>
+      <TouchableOpacity onPress={()=>{navigation.navigate('Levels')}} style={{backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', padding: 24, borderRadius: 15, alignItems: 'center'}}>
           <Text style={{fontFamily: 'Nunito-Bold', color: '#000', fontSize: 24}}>
             Start play
           </Text>
       </TouchableOpacity>
-      {/*<TouchableOpacity onPress={()=>{navigation.navigate('Levels')}} style={{backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', padding: 24, borderRadius: 15, alignItems: 'center'}}>*/}
+      {/*<TouchableOpacity onPress={()=>{navigation.navigate('Levels')}} style={{backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', padding: 24, borderRadius: 15, alignItems: 'center'}}>*/}
       {/*  <Text style={{fontFamily: 'Nunito-Bold', color: '#000', fontSize: 24}}>*/}
       {/*    Levels*/}
       {/*  </Text>*/}
       {/*</TouchableOpacity>*/}
-      <TouchableOpacity onPress={()=>{navigation.navigate('Shop')}} style={{backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', padding: 24, borderRadius: 15, alignItems: 'center'}}>
+      <TouchableOpacity onPress={()=>{navigation.navigate('Shop')}} style={{backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', padding: 24, borderRadius: 15, alignItems: 'center'}}>
         <Text style={{fontFamily: 'Nunito-Bold', color: '#000', fontSize: 24}}>
           Shop
         </Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={()=>{navigation.navigate('Inventory')}} style={{backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', padding: 24, borderRadius: 15, alignItems: 'center'}}>
+      <TouchableOpacity onPress={()=>{navigation.navigate('Inventory')}} style={{backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', padding: 24, borderRadius: 15, alignItems: 'center'}}>
         <Text style={{fontFamily: 'Nunito-Bold', color: '#000', fontSize: 24}}>
           Inventory
         </Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={()=>{navigation.navigate('History')}} style={{backgroundColor: '#d7c08a',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', padding: 24, borderRadius: 15, alignItems: 'center'}}>
+      <TouchableOpacity onPress={()=>{navigation.navigate('History')}} style={{backgroundColor: '#FFB300',marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', padding: 24, borderRadius: 15, alignItems: 'center'}}>
         <Text style={{fontFamily: 'Nunito-Bold', color: '#000', fontSize: 24}}>
           Crowns in history
         </Text>
       </TouchableOpacity>
       <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
-        <TouchableOpacity onPress={()=>{navigation.navigate('Settings')}} style={{backgroundColor: '#d7c08a', width: '47%', marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', padding: 24, borderRadius: 15, alignItems: 'center'}}>
+        <TouchableOpacity onPress={()=>{navigation.navigate('Settings')}} style={{backgroundColor: '#FFB300', width: '47%', marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', padding: 24, borderRadius: 15, alignItems: 'center'}}>
           <Settings/>
         </TouchableOpacity>
-        <TouchableOpacity onPress={()=>{navigation.navigate('Ruler')}} style={{backgroundColor: '#d7c08a',width: '47%', marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', padding: 24, borderRadius: 15, alignItems: 'center'}}>
+        <TouchableOpacity onPress={()=>{navigation.navigate('Ruler')}} style={{backgroundColor: '#FFB300',width: '47%', marginBottom: 16, borderWidth: 6, borderColor: '#e5d273', padding: 24, borderRadius: 15, alignItems: 'center'}}>
           <FileSvg/>
         </TouchableOpacity>
       </View>

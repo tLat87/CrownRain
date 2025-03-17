@@ -1,9 +1,10 @@
-import {View, Text, TouchableOpacity, Image, ImageBackground} from 'react-native';
+import {View, Text, TouchableOpacity, Image, ImageBackground, Animated} from 'react-native';
 import BackSvg from '../assets/svg/backSvg';
 import {selectCompletedLevels} from '../redux/slices/levelSlice';
 import {useSelector} from 'react-redux';
 import LockSvg from '../assets/svg/lockSvg';
 import {selectSelectedItem} from '../redux/slices/selectedItemSlice';
+import React from 'react';
 
 const LevelsScreen = ({ navigation }) => {
   const completedLevels = useSelector(selectCompletedLevels);
@@ -21,7 +22,7 @@ const LevelsScreen = ({ navigation }) => {
         }
         style={styles.container}
       >
-      <TouchableOpacity onPress={()=>{navigation.goBack()}} style={{backgroundColor: '#d7c08a', borderWidth: 6, borderColor: '#e5d273', padding: 10, borderRadius: 15, alignItems: 'center', position: 'absolute', zIndex: 1, left: 24, top: 80}}>
+      <TouchableOpacity onPress={()=>{navigation.goBack()}} style={{backgroundColor: '#FFB300', borderWidth: 6, borderColor: '#e5d273', padding: 10, borderRadius: 15, alignItems: 'center', position: 'absolute', zIndex: 1, left: 24, top: 80}}>
         <BackSvg/>
       </TouchableOpacity>
       {/*<Image resizeMode={'contain'} source={require('../assets/img/Crown1.png')} style={{width:100, position:'absolute', top: 50, left: 20, transform: [{ rotate: '35deg' }]}} />*/}
@@ -213,6 +214,7 @@ const LevelsScreen = ({ navigation }) => {
       <View style={styles.levelsContainer}>
         {levels.map((level) => {
           const isUnlocked = level === 1 || completedLevels.includes(level - 1);
+          const isCompleted = completedLevels.includes(level);
 
           return (
             <TouchableOpacity
@@ -221,6 +223,14 @@ const LevelsScreen = ({ navigation }) => {
               style={[styles.button, level === 10 && styles.largeButton, !isUnlocked && styles.lockedButton]}
               disabled={!isUnlocked}
             >
+              {isCompleted && <Image
+                source={require('../assets/img/Crown1.png')}
+                style={{width: 80,
+                  height: 80,
+                  position: 'absolute',
+                  top: -50,}}
+                resizeMode="contain"
+              />}
               {isUnlocked ? (
                 <Text style={[styles.buttonText, level === 10 && styles.largeText]}>{level}</Text>
               ) : (
@@ -244,7 +254,7 @@ const styles = {
   },
   title: {
     fontFamily: 'Nunito-Bold',
-    color: '#d7c08a',
+    color: '#FFB300',
     fontSize: 42,
   },
   levelsContainer: {
@@ -255,7 +265,7 @@ const styles = {
     width: '80%',
   },
   button: {
-    backgroundColor: '#d7c08a',
+    backgroundColor: '#FFB300',
     borderWidth: 6,
     borderColor: '#e5d273',
     paddingHorizontal: 20,
@@ -268,7 +278,7 @@ const styles = {
   buttonText: {
     fontFamily: 'Nunito-Bold',
     color: '#000',
-    fontSize: 24,
+    fontSize: 32,
   },
   largeButton: {
     width: '40%',

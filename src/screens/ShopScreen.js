@@ -42,7 +42,7 @@ const ShopScreen = ({ navigation }) => {
             navigation.goBack();
           }}
           style={{
-            backgroundColor: '#d7c08a',
+            backgroundColor: '#FFB300',
             borderWidth: 6,
             borderColor: '#e5d273',
             padding: 10,
@@ -251,7 +251,7 @@ const ShopScreen = ({ navigation }) => {
 
         <View
           style={{
-            backgroundColor: '#d7c08a',
+            backgroundColor: '#FFB300',
             flexDirection: 'row',
             width: '90%',
             marginBottom: 16,
@@ -356,7 +356,7 @@ const ShopScreen = ({ navigation }) => {
 
         <View
           style={{
-            backgroundColor: '#d7c08a',
+            backgroundColor: '#FFB300',
             flexDirection: 'row',
             width: '90%',
             marginBottom: 16,
@@ -460,7 +460,7 @@ const ShopScreen = ({ navigation }) => {
 
         <View
           style={{
-            backgroundColor: '#d7c08a',
+            backgroundColor: '#FFB300',
             flexDirection: 'row',
             width: '90%',
             marginBottom: 16,
@@ -576,7 +576,7 @@ const styles = {
   },
   title: {
     fontFamily: 'Nunito-Bold',
-    color: '#d7c08a',
+    color: '#FFB300',
     fontSize: 42,
   },
   levelsContainer: {
@@ -587,7 +587,7 @@ const styles = {
     width: '80%',
   },
   button: {
-    backgroundColor: '#d7c08a',
+    backgroundColor: '#FFB300',
     borderWidth: 6,
     borderColor: '#e5d273',
     paddingHorizontal: 20,

@@ -89,7 +89,7 @@ const Onboarding2Screen = ({ navigation }) => {
         </View>
       </View>
 
-      <View style={{backgroundColor: '#d7c08a',marginBottom: 50, borderWidth: 6, borderColor: '#e5d273', padding: 24, borderRadius: 15, alignItems: 'center'}}>
+      <View style={{backgroundColor: '#FFB300',marginBottom: 50, borderWidth: 6, borderColor: '#e5d273', padding: 24, borderRadius: 15, alignItems: 'center'}}>
         <Text style={{fontFamily: 'Nunito-Bold', fontSize: 24, textAlign: 'center'}}>
           Beware of traps!
         </Text>
@@ -97,8 +97,8 @@ const Onboarding2Screen = ({ navigation }) => {
           Avoid damaged crowns!
           They can take away points.
         </Text>
-        <TouchableOpacity onPress={() => navigation.navigate('Onboarding3')} style={{backgroundColor: '#000', width: '70%', alignItems: 'center', paddingVertical: 20,borderWidth: 6, borderColor: '#e5d273', borderRadius: 15, marginTop: 30}}>
-          <Text style={{fontFamily: 'Nunito-Bold', color: '#fff', fontSize: 20}}>
+        <TouchableOpacity onPress={() => navigation.navigate('Onboarding3')} style={{backgroundColor: '#fff', width: '70%', alignItems: 'center', paddingVertical: 20,borderWidth: 6, borderColor: '#e5d273', borderRadius: 15, marginTop: 30}}>
+          <Text style={{fontFamily: 'Nunito-Bold', color: '#000', fontSize: 20}}>
             NEXT
           </Text>
         </TouchableOpacity>

@@ -46,7 +46,7 @@ const SettingsScreen = ({ navigation }) => {
           navigation.goBack();
         }}
         style={{
-          backgroundColor: '#d7c08a',
+          backgroundColor: '#FFB300',
           borderWidth: 6,
           borderColor: '#e5d273',
           padding: 10,
@@ -237,7 +237,7 @@ const SettingsScreen = ({ navigation }) => {
       <Text style={styles.title}>Settings</Text>
       <View
         style={{
-          backgroundColor: '#d7c08a',
+          backgroundColor: '#FFB300',
           marginBottom: 16,
           borderWidth: 6,
           borderColor: '#e5d273',
@@ -301,7 +301,7 @@ const SettingsScreen = ({ navigation }) => {
         </View>
       </View>
 
-      <View style={{backgroundColor: '#d7c08a', marginBottom: 50, borderWidth: 6, width: '90%',borderColor: '#e5d273', padding: 24, borderRadius: 15, alignItems: 'center'}}>
+      <View style={{backgroundColor: '#FFB300', marginBottom: 50, borderWidth: 6, width: '90%',borderColor: '#e5d273', padding: 24, borderRadius: 15, alignItems: 'center'}}>
         <Text style={{fontFamily: 'Nunito-Bold', fontSize: 24, textAlign: 'center'}}>
           Start the game over again
         </Text>
@@ -328,7 +328,7 @@ const styles = {
   },
   title: {
     fontFamily: 'Nunito-Bold',
-    color: '#d7c08a',
+    color: '#FFB300',
     fontSize: 42,
   },
   levelsContainer: {
@@ -339,7 +339,7 @@ const styles = {
     width: '80%',
   },
   button: {
-    backgroundColor: '#d7c08a',
+    backgroundColor: '#FFB300',
     borderWidth: 6,
     borderColor: '#e5d273',
     paddingHorizontal: 20,

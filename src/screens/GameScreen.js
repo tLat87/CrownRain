@@ -46,7 +46,6 @@ const FallingImage = ({ source, onEnd, onPress, isPaused, levelPassed}) => {
   }, [isPaused]);
 
 
-
   return (
     <TouchableOpacity
       activeOpacity={0.7}
@@ -134,7 +133,7 @@ const GameScreen = ({ navigation, route }) => {
 <ImageBackground
   source={isPaused
     ? require('../assets/img/6538959_14620.png')
-    : require('../assets/img/6538959_1460.png')} // Обычный фон
+    : require('../assets/img/6538959_1460.png')}
   style={{ flex: 1, backgroundColor: '#000' }}
   resizeMode="cover"
 >
@@ -163,7 +162,7 @@ const GameScreen = ({ navigation, route }) => {
               setIsPaused(true);
             }}
             style={{
-              backgroundColor: '#d7c08a',
+              backgroundColor: '#FFB300',
               borderWidth: 6,
               justifyContent: 'center',
               borderColor: '#e5d273',
@@ -176,7 +175,7 @@ const GameScreen = ({ navigation, route }) => {
           </TouchableOpacity>
           <View
             style={{
-              backgroundColor: '#d7c08a',
+              backgroundColor: '#FFB300',
               borderWidth: 6,
               borderColor: '#e5d273',
               padding: 10,
@@ -243,7 +242,7 @@ const GameScreen = ({ navigation, route }) => {
       {isPaused && (
         <View
           style={{
-            backgroundColor: '#d7c08a',
+            backgroundColor: '#FFB300',
             borderWidth: 6,
             justifyContent: 'center',
             borderColor: '#e5d273',
@@ -348,7 +347,7 @@ const GameScreen = ({ navigation, route }) => {
       {levelPassed && (
         <View
           style={{
-            backgroundColor: '#d7c08a',
+            backgroundColor: '#FFB300',
             borderWidth: 6,
             justifyContent: 'center',
             borderColor: '#e5d273',
