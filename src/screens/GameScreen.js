@@ -517,71 +517,71 @@ const GameScreen = ({ navigation, route }) => {
         </View>
       )}
 
-      <View style={{position: 'absolute', bottom: 50, alignSelf: 'center'}}>
-        {score > 0 &&
-          <Image
-            resizeMode="contain"
-            source={require('../assets/img/Crown1.png')}
-            style={{
-              width: 70,
-              position: 'absolute',
-              bottom: 8,
-              alignSelf: 'center',
-              height: 50,
-              // borderRadius: 15,
-              // marginLeft: 16,
-              zIndex: 2,
-            }}
-          />
-        }
-        {score > 1 &&
-          <Image
-            resizeMode="contain"
-            source={require('../assets/img/Crown1.png')}
-            style={{
-              width: 50,
-              position: 'absolute',
-              bottom: 5,
-              // alignSelf: 'center',
-              right: 10,
-              height: 50,
-              // borderRadius: 15,
-              // marginLeft: 16,
-              zIndex: 1,
-            }}
-          />
-        }
-        {score > 2 &&
-          <Image
-            resizeMode="contain"
-            source={require('../assets/img/Crown1.png')}
-            style={{
-              width: 50,
-              position: 'absolute',
-              bottom: 5,
-              // alignSelf: 'center',
-              left: 10,
-              height: 50,
-              // borderRadius: 15,
-              // marginLeft: 16,
-              zIndex: 1,
-            }}
-          />
-        }
-        <Image
-          resizeMode="contain"
-          source={require('../assets/img/Frame.png')}
-          style={{
-            width: 156,
-            // position: 'absolute',
-            // bottom: 50,
-            // alignSelf: 'center',
-            height: 34,
-            // borderRadius: 15,
-            // marginLeft: 16,
-          }}
-        />
-      </View>
+      {/*<View style={{position: 'absolute', bottom: 50, alignSelf: 'center'}}>*/}
+      {/*  {score > 0 &&*/}
+      {/*    <Image*/}
+      {/*      resizeMode="contain"*/}
+      {/*      source={require('../assets/img/Crown1.png')}*/}
+      {/*      style={{*/}
+      {/*        width: 70,*/}
+      {/*        position: 'absolute',*/}
+      {/*        bottom: 8,*/}
+      {/*        alignSelf: 'center',*/}
+      {/*        height: 50,*/}
+      {/*        // borderRadius: 15,*/}
+      {/*        // marginLeft: 16,*/}
+      {/*        zIndex: 2,*/}
+      {/*      }}*/}
+      {/*    />*/}
+      {/*  }*/}
+      {/*  {score > 1 &&*/}
+      {/*    <Image*/}
+      {/*      resizeMode="contain"*/}
+      {/*      source={require('../assets/img/Crown1.png')}*/}
+      {/*      style={{*/}
+      {/*        width: 50,*/}
+      {/*        position: 'absolute',*/}
+      {/*        bottom: 5,*/}
+      {/*        // alignSelf: 'center',*/}
+      {/*        right: 10,*/}
+      {/*        height: 50,*/}
+      {/*        // borderRadius: 15,*/}
+      {/*        // marginLeft: 16,*/}
+      {/*        zIndex: 1,*/}
+      {/*      }}*/}
+      {/*    />*/}
+      {/*  }*/}
+      {/*  {score > 2 &&*/}
+      {/*    <Image*/}
+      {/*      resizeMode="contain"*/}
+      {/*      source={require('../assets/img/Crown1.png')}*/}
+      {/*      style={{*/}
+      {/*        width: 50,*/}
+      {/*        position: 'absolute',*/}
+      {/*        bottom: 5,*/}
+      {/*        // alignSelf: 'center',*/}
+      {/*        left: 10,*/}
+      {/*        height: 50,*/}
+      {/*        // borderRadius: 15,*/}
+      {/*        // marginLeft: 16,*/}
+      {/*        zIndex: 1,*/}
+      {/*      }}*/}
+      {/*    />*/}
+      {/*  }*/}
+        {/*<Image*/}
+        {/*  resizeMode="contain"*/}
+        {/*  source={require('../assets/img/Frame.png')}*/}
+        {/*  style={{*/}
+        {/*    width: 156,*/}
+        {/*    // position: 'absolute',*/}
+        {/*    // bottom: 50,*/}
+        {/*    // alignSelf: 'center',*/}
+        {/*    height: 34,*/}
+        {/*    // borderRadius: 15,*/}
+        {/*    // marginLeft: 16,*/}
+        {/*  }}*/}
+        {/*/>*/}
+      {/*</View>*/}
     </ImageBackground>
   );
 };
